@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMUDERA - Trusted Hardware. Honest Prices.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-[#F8FAFC] text-gray-800 font-sans antialiased">
+
+    <!-- 1. Top Utility Header (Deep Navy) -->
+    <div class="bg-[#0A2540] text-white text-[11px] py-1.5 px-4 border-b border-white/10">
+        <div class="max-w-7xl mx-auto flex justify-between items-center">
+            <span class="flex items-center gap-1 opacity-90">
+                <i class="fa-solid fa-store text-orange-400"></i>
+                <span>Selamat datang di SAMUDERA - Trusted Hardware. Honest Prices.</span>
+            </span>
+            <div class="flex items-center space-x-4 opacity-90">
+                <a href="#" class="hover:text-orange-300 flex items-center gap-1"><i class="fa-solid fa-circle-question"></i> Bantuan</a>
+                <a href="#" class="hover:text-orange-300 flex items-center gap-1"><i class="fa-solid fa-truck-fast"></i> Lacak Pesanan</a>
+                <a href="#" class="hover:text-orange-300 flex items-center gap-1"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2. Main Navigation Header -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between gap-3 md:gap-6">
+            
+            <!-- Logo with Wave Icon -->
+            <a href="#" class="flex items-center gap-2 shrink-0">
+                <div class="w-9 h-9 md:w-11 md:h-11 bg-gradient-to-br from-[#0B4A72] to-[#1E6B9E] rounded-full flex items-center justify-center shadow-sm relative overflow-hidden">
+                    <svg class="w-6 h-6 text-white" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="text-lg md:text-2xl font-black tracking-tight text-[#0A2540] block leading-none">SAMUDERA</span>
+                    <span class="text-[9px] md:text-[11px] font-medium text-gray-500 tracking-tight block">Trusted Hardware. Honest Prices.</span>
+                </div>
+            </a>
+
+            <!-- Search Bar -->
+            <div class="flex-1 max-w-2xl flex">
+                <div class="relative w-full">
+                    <input type="text" placeholder="Cari produk, kategori, atau merek..." class="w-full border border-gray-300 rounded-l-lg pl-3 pr-8 py-2 text-xs md:text-sm focus:outline-none focus:border-[#0B4A72]">
+                </div>
+                <button class="bg-[#F95700] hover:bg-orange-600 text-white px-4 md:px-6 rounded-r-lg font-medium transition flex items-center justify-center">
+                    <i class="fa-solid fa-magnifying-glass text-xs md:text-sm"></i>
+                </button>
+            </div>
+
+            <!-- Cart & Wishlist -->
+            <div class="flex items-center space-x-3 md:space-x-5 text-gray-700">
+                <a href="#" class="relative flex items-center space-x-1 hover:text-[#F95700]">
+                    <i class="fa-solid fa-cart-shopping text-lg md:text-xl"></i>
+                    <span class="absolute -top-2 -right-2 bg-[#F95700] text-white text-[10px] font-bold rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                    <span class="hidden md:inline text-xs font-semibold ml-1">Keranjang</span>
+                </a>
+                <a href="#" class="hidden md:flex items-center space-x-1 hover:text-[#F95700]">
+                    <i class="fa-regular fa-heart text-xl"></i>
+                    <span class="text-xs font-semibold">Favorit</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Horizontal Sub-Nav -->
+        <nav class="bg-white border-t border-gray-100 shadow-xs overflow-x-auto no-scrollbar">
+            <div class="max-w-7xl mx-auto px-4 flex items-center space-x-6 text-xs font-medium py-2.5 whitespace-nowrap">
+                <a href="#" class="text-[#0A2540] font-bold flex items-center space-x-1.5"><i class="fa-solid fa-bars"></i><span>SEMUA KATEGORI</span></a>
+                <a href="#" class="text-[#F95700] font-bold border-b-2 border-[#F95700] pb-1 flex items-center gap-1"><i class="fa-solid fa-house text-[10px]"></i> Home</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-water text-[10px]"></i> Water Pump</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-screwdriver-wrench text-[10px]"></i> Tools</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-bolt text-[10px]"></i> Electrical</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-faucet-drip text-[10px]"></i> Plumbing</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-gear text-[10px]"></i> Hardware</a>
+                <a href="#" class="hover:text-[#F95700] text-gray-600 flex items-center gap-1"><i class="fa-solid fa-paint-roller text-[10px]"></i> Home Improvement</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- 3. Rich Hero Banner Slider -->
+    <section class="max-w-7xl mx-auto px-3 md:px-4 my-4">
+        <div class="bg-gradient-to-r from-[#072440] via-[#0C3C66] to-[#12538A] rounded-2xl text-white p-5 md:p-10 relative overflow-hidden shadow-md">
+            
+            <!-- Left Arrows -->
+            <button class="absolute left-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs backdrop-blur-xs z-20">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="absolute right-2 top-1/2 -translate-y-1/2 bg-black/30 hover:bg-black/50 text-white w-8 h-8 rounded-full flex items-center justify-center text-xs backdrop-blur-xs z-20">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+
+            <div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-center relative z-10 px-4 md:px-8">
+                <div class="md:col-span-7">
+                    <h1 class="text-2xl md:text-4xl font-extrabold leading-tight tracking-tight mb-2">
+                        SOLUSI LENGKAP <br>
+                        <span class="text-[#FF8C32]">UNTUK KEBUTUHAN RUMAH & PROYEK ANDA</span>
+                    </h1>
+                    <p class="text-gray-200 text-xs md:text-sm mb-5">Produk berkualitas • Harga bersaing • Pengiriman cepat</p>
+
+                    <div class="flex flex-col sm:flex-row gap-2 md:gap-4 text-[11px] font-semibold text-gray-100">
+                        <div class="flex items-center space-x-1.5 bg-black/25 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-circle-check text-green-400"></i>
+                            <span>Produk Original 100%</span>
+                        </div>
+                        <div class="flex items-center space-x-1.5 bg-black/25 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-tag text-orange-400"></i>
+                            <span>Harga Terbaik Bersaing</span>
+                        </div>
+                        <div class="flex items-center space-x-1.5 bg-black/25 backdrop-blur-md px-3 py-1.5 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-truck-fast text-blue-300"></i>
+                            <span>Pengiriman Ke Seluruh Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Collage Right -->
+                <div class="md:col-span-5 flex justify-center items-center">
+                    <div class="relative w-full max-w-[280px] md:max-w-[340px] aspect-4/3 bg-white/10 backdrop-blur-md rounded-xl border border-white/20 p-3 flex items-center justify-center shadow-2xl">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=600&q=80" alt="Industrial Hardware" class="w-full h-full object-cover rounded-lg shadow">
+                        <div class="absolute -bottom-3 -left-3 bg-[#F95700] text-white px-3 py-1 rounded-lg text-xs font-bold shadow-lg flex items-center gap-1">
+                            <i class="fa-solid fa-fire"></i> Best Deals 2026
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dots Indicator -->
+            <div class="flex justify-center space-x-1.5 mt-4">
+                <span class="w-2.5 h-2.5 bg-[#F95700] rounded-full"></span>
+                <span class="w-2.5 h-2.5 bg-white/40 rounded-full"></span>
+                <span class="w-2.5 h-2.5 bg-white/40 rounded-full"></span>
+                <span class="w-2.5 h-2.5 bg-white/40 rounded-full"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Category Grid Icons -->
+    <section class="max-w-7xl mx-auto px-3 md:px-4 my-6">
+        <div class="grid grid-cols-4 sm:grid-cols-4 lg:grid-cols-8 gap-2.5 md:gap-4">
+            
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-water text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Water Pump</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-screwdriver-wrench text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Tools</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-bolt text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Electrical</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-faucet-drip text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Plumbing</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-gear text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Hardware</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-house-chimney text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Home Improvement</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-hard-hat text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Safety Equipment</span>
+            </a>
+
+            <a href="#" class="bg-white p-3 rounded-xl border border-gray-200 text-center hover:shadow-md transition group">
+                <div class="w-10 h-10 md:w-12 md:h-12 mx-auto bg-blue-50 text-[#0B4A72] rounded-full flex items-center justify-center mb-2 group-hover:bg-[#0B4A72] group-hover:text-white transition">
+                    <i class="fa-solid fa-paint-roller text-lg"></i>
+                </div>
+                <span class="text-[11px] font-bold text-gray-700 block leading-tight">Paint & Accessories</span>
+            </a>
+
+        </div>
+    </section>
+
+    <!-- 5. Trust Badges Row -->
+    <section class="max-w-7xl mx-auto px-3 md:px-4 mb-6">
+        <div class="bg-blue-50/80 border border-blue-100 rounded-xl p-3 md:p-4 grid grid-cols-2 md:grid-cols-4 gap-3 text-xs">
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-truck-shield text-2xl text-[#0B4A72]"></i>
+                <div>
+                    <h4 class="font-bold text-gray-900">Gratis Ongkir</h4>
+                    <p class="text-[10px] text-gray-500">Min. belanja tertentu</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-award text-2xl text-[#0B4A72]"></i>
+                <div>
+                    <h4 class="font-bold text-gray-900">Garansi Resmi</h4>
+                    <p class="text-[10px] text-gray-500">Garansi produk original</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-rotate-left text-2xl text-[#0B4A72]"></i>
+                <div>
+                    <h4 class="font-bold text-gray-900">7 Hari Retur</h4>
+                    <p class="text-[10px] text-gray-500">Syarat & ketentuan berlaku</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <i class="fa-solid fa-headset text-2xl text-[#0B4A72]"></i>
+                <div>
+                    <h4 class="font-bold text-gray-900">Customer Service</h4>
+                    <p class="text-[10px] text-gray-500">Siap membantu Anda</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Produk Terlaris Section -->
+    <section class="max-w-7xl mx-auto px-3 md:px-4 my-8">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-base md:text-xl font-extrabold text-gray-900 tracking-tight">PRODUK TERLARIS</h2>
+            <a href="#" class="text-[#F95700] font-bold text-xs hover:underline flex items-center gap-1">Lihat semua <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 md:gap-4">
+            
+            <!-- Card 1: Shimizu -->
+            <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-lg transition group">
+                <div>
+                    <span class="text-[10px] font-black text-blue-900 bg-blue-50 px-2 py-0.5 rounded tracking-wide">SHIMIZU</span>
+                    <div class="h-32 bg-gray-50 rounded-lg my-2 overflow-hidden flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=300&q=80" alt="Shimizu" class="h-full object-contain group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mb-1.5 min-h-[32px]">Shimizu Pompa Air PS-128 BIT</h3>
+                    <p class="text-[#F95700] font-extrabold text-sm md:text-base">Rp 675.000</p>
+                </div>
+                <div class="mt-3">
+                    <div class="flex items-center text-[10px] text-gray-500 mb-2">
+                        <span class="text-amber-500 font-bold flex items-center gap-0.5"><i class="fa-solid fa-star"></i> 4.9</span>
+                        <span class="mx-1">•</span>
+                        <span>Terjual 1.2K</span>
+                    </div>
+                    <button class="w-full border border-[#F95700] text-[#F95700] hover:bg-[#F95700] hover:text-white text-xs font-bold py-1.5 rounded-lg transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-cart-plus text-[11px]"></i><span>Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2: LEO -->
+            <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-lg transition group">
+                <div>
+                    <span class="text-[10px] font-black text-teal-800 bg-teal-50 px-2 py-0.5 rounded tracking-wide">LEO</span>
+                    <div class="h-32 bg-gray-50 rounded-lg my-2 overflow-hidden flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&w=300&q=80" alt="LEO Pump" class="h-full object-contain group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mb-1.5 min-h-[32px]">LEO Pompa Air AJm37</h3>
+                    <p class="text-[#F95700] font-extrabold text-sm md:text-base">Rp 430.000</p>
+                </div>
+                <div class="mt-3">
+                    <div class="flex items-center text-[10px] text-gray-500 mb-2">
+                        <span class="text-amber-500 font-bold flex items-center gap-0.5"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span class="mx-1">•</span>
+                        <span>Terjual 856</span>
+                    </div>
+                    <button class="w-full border border-[#F95700] text-[#F95700] hover:bg-[#F95700] hover:text-white text-xs font-bold py-1.5 rounded-lg transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-cart-plus text-[11px]"></i><span>Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3: Bosch -->
+            <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-lg transition group">
+                <div>
+                    <span class="text-[10px] font-black text-red-700 bg-red-50 px-2 py-0.5 rounded tracking-wide">BOSCH</span>
+                    <div class="h-32 bg-gray-50 rounded-lg my-2 overflow-hidden flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=300&q=80" alt="Bosch Drill" class="h-full object-contain group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mb-1.5 min-h-[32px]">Bosch Cordless Drill GSR 120-LI</h3>
+                    <p class="text-[#F95700] font-extrabold text-sm md:text-base">Rp 1.250.000</p>
+                </div>
+                <div class="mt-3">
+                    <div class="flex items-center text-[10px] text-gray-500 mb-2">
+                        <span class="text-amber-500 font-bold flex items-center gap-0.5"><i class="fa-solid fa-star"></i> 4.9</span>
+                        <span class="mx-1">•</span>
+                        <span>Terjual 620</span>
+                    </div>
+                    <button class="w-full border border-[#F95700] text-[#F95700] hover:bg-[#F95700] hover:text-white text-xs font-bold py-1.5 rounded-lg transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-cart-plus text-[11px]"></i><span>Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4: Makita -->
+            <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-lg transition group">
+                <div>
+                    <span class="text-[10px] font-black text-cyan-800 bg-cyan-50 px-2 py-0.5 rounded tracking-wide">MAKITA</span>
+                    <div class="h-32 bg-gray-50 rounded-lg my-2 overflow-hidden flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1572981779307-38b8cabb2407?auto=format&fit=crop&w=300&q=80" alt="Makita Grinder" class="h-full object-contain group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mb-1.5 min-h-[32px]">Makita Angle Grinder M9513B</h3>
+                    <p class="text-[#F95700] font-extrabold text-sm md:text-base">Rp 585.000</p>
+                </div>
+                <div class="mt-3">
+                    <div class="flex items-center text-[10px] text-gray-500 mb-2">
+                        <span class="text-amber-500 font-bold flex items-center gap-0.5"><i class="fa-solid fa-star"></i> 4.8</span>
+                        <span class="mx-1">•</span>
+                        <span>Terjual 470</span>
+                    </div>
+                    <button class="w-full border border-[#F95700] text-[#F95700] hover:bg-[#F95700] hover:text-white text-xs font-bold py-1.5 rounded-lg transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-cart-plus text-[11px]"></i><span>Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 5: PVC Pipe -->
+            <div class="bg-white border border-gray-200 rounded-xl p-3 flex flex-col justify-between hover:shadow-lg transition group">
+                <div>
+                    <span class="text-[10px] font-black text-gray-700 bg-gray-100 px-2 py-0.5 rounded tracking-wide">PIPA</span>
+                    <div class="h-32 bg-gray-50 rounded-lg my-2 overflow-hidden flex items-center justify-center p-2">
+                        <img src="https://images.unsplash.com/photo-1542013936693-884638332954?auto=format&fit=crop&w=300&q=80" alt="PVC Pipe" class="h-full object-contain group-hover:scale-105 transition">
+                    </div>
+                    <h3 class="text-xs font-semibold text-gray-800 line-clamp-2 mb-1.5 min-h-[32px]">Pipa PVC AW 1/2 inch (D 20mm)</h3>
+                    <p class="text-[#F95700] font-extrabold text-sm md:text-base">Rp 12.500</p>
+                </div>
+                <div class="mt-3">
+                    <div class="flex items-center text-[10px] text-gray-500 mb-2">
+                        <span class="text-amber-500 font-bold flex items-center gap-0.5"><i class="fa-solid fa-star"></i> 4.7</span>
+                        <span class="mx-1">•</span>
+                        <span>Terjual 2.1K</span>
+                    </div>
+                    <button class="w-full border border-[#F95700] text-[#F95700] hover:bg-[#F95700] hover:text-white text-xs font-bold py-1.5 rounded-lg transition flex items-center justify-center gap-1">
+                        <i class="fa-solid fa-cart-plus text-[11px]"></i><span>Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 7. Promo Feature Banner Grid -->
+    <section class="max-w-7xl mx-auto px-3 md:px-4 my-8">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            
+            <div class="bg-gradient-to-r from-[#0C3C66] to-[#16588E] text-white p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div>
+                    <h3 class="font-extrabold text-sm tracking-tight">PENGIRIMAN CEPAT</h3>
+                    <p class="text-[11px] text-gray-200 mt-0.5 mb-3">Ke seluruh Indonesia bersama ekspedisi terbaik</p>
+                    <a href="#" class="bg-white text-[#0C3C66] text-xs font-bold px-3 py-1.5 rounded-lg shadow hover:bg-gray-100 transition inline-block">Lihat Selengkapnya</a>
+                </div>
+                <i class="fa-solid fa-truck-fast text-4xl opacity-80 ml-2"></i>
+            </div>
+
+            <div class="bg-gradient-to-r from-[#F95700] to-[#FF7728] text-white p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div>
+                    <h3 class="font-extrabold text-sm tracking-tight">PRODUK ORIGINAL</h3>
+                    <p class="text-[11px] text-gray-100 mt-0.5 mb-3">Jaminan 100% produk original bergaransi resmi pabrikan</p>
+                    <a href="#" class="bg-white text-[#F95700] text-xs font-bold px-3 py-1.5 rounded-lg shadow hover:bg-gray-100 transition inline-block">Belanja Sekarang</a>
+                </div>
+                <i class="fa-solid fa-shield-halved text-4xl opacity-80 ml-2"></i>
+            </div>
+
+            <div class="bg-gradient-to-r from-[#1E5282] to-[#2B6EA8] text-white p-5 rounded-2xl flex items-center justify-between shadow-sm">
+                <div>
+                    <h3 class="font-extrabold text-sm tracking-tight">LACAK PESANAN</h3>
+                    <p class="text-[11px] text-gray-200 mt-0.5 mb-3">Pantau pesanan Anda secara real-time kapan saja</p>
+                    <a href="#" class="bg-white text-[#1E5282] text-xs font-bold px-3 py-1.5 rounded-lg shadow hover:bg-gray-100 transition inline-block">Lacak Sekarang</a>
+                </div>
+                <i class="fa-solid fa-mobile-screen-button text-4xl opacity-80 ml-2"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- 8. Footer -->
+    <footer class="bg-white border-t border-gray-200 pt-10 pb-6 mt-12 text-xs text-gray-600">
+        <div class="max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-5 gap-8 mb-8">
+            
+            <div class="md:col-span-2">
+                <div class="flex items-center gap-2 mb-3">
+                    <div class="w-8 h-8 bg-[#0B4A72] rounded-full flex items-center justify-center text-white">
+                        <svg class="w-5 h-5" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                        </svg>
+                    </div>
+                    <span class="font-black text-xl text-[#0A2540]">SAMUDERA</span>
+                </div>
+                <p class="text-gray-500 text-xs leading-relaxed max-w-sm mb-4">
+                    Toko online terpercaya untuk kebutuhan hardware, tools, water pump, electrical, plumbing, dan kebutuhan proyek Anda.
+                </p>
+                <div class="flex space-x-3 text-gray-400">
+                    <a href="#" class="hover:text-[#F95700] text-base"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-[#F95700] text-base"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-[#F95700] text-base"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#" class="hover:text-[#F95700] text-base"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-gray-900 mb-3 tracking-wide">INFORMASI</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-[#F95700]">About Us</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Cara Belanja</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Pembayaran</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Pengiriman</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Garansi & Retur</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-gray-900 mb-3 tracking-wide">LAYANAN PELANGGAN</h4>
+                <ul class="space-y-2 text-gray-500">
+                    <li><a href="#" class="hover:text-[#F95700]">Bantuan</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Lacak Pesanan</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Kebijakan Privasi</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Syarat & Ketentuan</a></li>
+                    <li><a href="#" class="hover:text-[#F95700]">Hubungi Kami</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="font-bold text-gray-900 mb-2 tracking-wide">METODE PEMBAYARAN</h4>
+                <div class="grid grid-cols-2 gap-1.5 font-bold text-[10px] text-gray-600 mb-4">
+                    <div class="bg-gray-100 p-1.5 rounded border text-center">BCA</div>
+                    <div class="bg-gray-100 p-1.5 rounded border text-center">Mandiri</div>
+                    <div class="bg-gray-100 p-1.5 rounded border text-center">BRI</div>
+                    <div class="bg-gray-100 p-1.5 rounded border text-center">BNI</div>
+                </div>
+
+                <h4 class="font-bold text-gray-900 mb-2 tracking-wide">EKSPEDISI</h4>
+                <div class="grid grid-cols-3 gap-1 font-bold text-[9px] text-gray-500">
+                    <div class="bg-gray-100 p-1 rounded border text-center">JNE</div>
+                    <div class="bg-gray-100 p-1 rounded border text-center">J&T</div>
+                    <div class="bg-gray-100 p-1 rounded border text-center">SiCepat</div>
+                    <div class="bg-gray-100 p-1 rounded border text-center">Grab</div>
+                    <div class="bg-gray-100 p-1 rounded border text-center">GoSend</div>
+                    <div class="bg-gray-100 p-1 rounded border text-center">Ninja</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 border-t border-gray-100 pt-5 flex flex-col sm:flex-row justify-between items-center text-[11px] text-gray-400">
+            <p>&copy; 2026 SAMUDERA. All Rights Reserved.</p>
+            <p class="mt-2 sm:mt-0 flex items-center gap-1">Made with <i class="fa-solid fa-heart text-red-500"></i> in Indonesia</p>
+        </div>
+    </footer>
+
+</body>
+</html>
